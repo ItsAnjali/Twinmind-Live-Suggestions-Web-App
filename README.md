@@ -102,31 +102,6 @@ Each flushed blob is shipped to `/api/transcribe`, appended to the transcript, a
 
 ---
 
-## Project structure
-
-```
-app/
-  layout.tsx
-  page.tsx                      # main 3-column UI
-  settings/page.tsx             # prompts + params + API key
-  api/
-    transcribe/route.ts
-    suggestions/route.ts
-    chat/route.ts
-components/                     # TranscriptPanel, SuggestionsPanel, ChatPanel,
-                                # MicControls, SuggestionCard, SettingsForm,
-                                # ExportButton
-lib/
-  groq.ts                       # Single source of Groq calls
-  prompts.ts                    # Default prompts + settings
-  validators.ts                 # JSON parsing & suggestion normalization
-  audio.ts                      # Rotating MediaRecorder
-  transcriptWindow.ts           # Rolling time-window helper
-  export.ts                     # Client-side JSON export
-  markdown.ts                   # Tiny safe markdown renderer for chat bubbles
-  utils.ts
-types/index.ts
-```
 
 ---
 
@@ -141,9 +116,4 @@ npm run lint     # next lint
 
 ---
 
-## Sample screenshots
 
-> _Add screenshots here before submitting:_
-> - `docs/screenshot-main.png` — 3-column layout while recording
-> - `docs/screenshot-suggestion-click.png` — clicked suggestion producing a detailed answer
-> - `docs/screenshot-settings.png` — settings page with the API key field
