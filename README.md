@@ -22,16 +22,6 @@ No server-side environment variables are required. The app is fully BYO-key.
 
 ---
 
-## Deploy to Vercel
-
-1. Push this folder to a public GitHub repo.
-2. Import it in [Vercel](https://vercel.com/new) — no environment variables needed.
-3. Open the deployed URL, paste your key in Settings, and start.
-
-> Optional: you can set `GROQ_API_KEY` on Vercel as a **fallback** for local-dev convenience. Any key supplied by the browser via the `x-groq-key` header takes precedence, so the per-user BYO-key flow still works on the deployed app.
-
----
-
 ## How the API key is handled
 
 - Entered in `/settings`, stored **only in the browser's `localStorage`**.
